@@ -6,12 +6,12 @@ public class Main {
         float var1,var2;
         var1=var2=0.f;
 
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Введите первое число >> ");
 
         try {
-            var1 = input.nextFloat();
+            var1 = sc.nextFloat();
         } catch (Exception e){
             System.out.println("Ошибка, недопустимое значение");
             System.exit(1);; //выход из программы
@@ -19,15 +19,15 @@ public class Main {
         System.out.print("Введите второе число >> ");
 
         try {
-            var2 = input.nextFloat();
+            var2 = sc.nextFloat();
         } catch (Exception e){
             System.out.println("Ошибка, недопустимое значение");
             System.exit(1); //выход из программы
         }
 
         System.out.print("Выберете оператор \n \"+, -, *, /\" \nВведите один из операторов >> ");
-        input.nextLine(); // очистка буфера
-        String operate=input.nextLine();
+        sc.nextLine(); // очистка буфера
+        String operate=sc.nextLine();
 
         float out=0; //блок выбора оператора
         switch (operate){
