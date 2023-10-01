@@ -1,1 +1,2 @@
-Simple calculator
+Simple  JAVA calculator \
+Jdk 20
