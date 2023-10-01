@@ -1,6 +1,6 @@
 package org.calc;
 
-public class FuncFloat{
+public class Funcs {
     public static float sum(float a, float b){ // +
         return a+b;
     }

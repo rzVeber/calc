@@ -24,10 +24,10 @@ public class Main {
 
         float out=0; //блок выбора оператора
         switch (operate){
-            case "+"-> {out = FuncFloat.sum(var1,var2);}
-            case "-"-> {out = FuncFloat.sub(var1,var2);}
-            case "*"-> {out = FuncFloat.mul(var1,var2);}
-            case "/"-> {out = FuncFloat.div(var1,var2);}
+            case "+"-> {out = Funcs.sum(var1,var2);}
+            case "-"-> {out = Funcs.sub(var1,var2);}
+            case "*"-> {out = Funcs.mul(var1,var2);}
+            case "/"-> {out = Funcs.div(var1,var2);}
             default -> {
                 System.out.println("Вы не ввели нужный оператор");
                 System.exit(2);
