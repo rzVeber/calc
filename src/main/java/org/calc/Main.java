@@ -4,21 +4,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         float var1,var2;
-        var1=var2=0.f;
+        var1=var2=0.F;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Введите первое число >> ");
-
-        try {
+        try { //проверка на коректно введенные данные
+            System.out.print("Введите первое число >> ");
             var1 = sc.nextFloat();
-        } catch (Exception e){
-            System.out.println("Ошибка, недопустимое значение");
-            System.exit(1);; //выход из программы
-        }
-        System.out.print("Введите второе число >> ");
-
-        try {
+            System.out.print("Введите второе число >> ");
             var2 = sc.nextFloat();
         } catch (Exception e){
             System.out.println("Ошибка, недопустимое значение");
@@ -27,7 +20,7 @@ public class Main {
 
         System.out.print("Выберете оператор \n \"+, -, *, /\" \nВведите один из операторов >> ");
         sc.nextLine(); // очистка буфера
-        String operate=sc.nextLine();
+        String operate = sc.nextLine();
 
         float out=0; //блок выбора оператора
         switch (operate){
@@ -37,9 +30,9 @@ public class Main {
             case "/"-> {out = Funcs.div(var1,var2);}
             default -> {
                 System.out.println("Вы не ввели нужный оператор");
+                System.exit(2);
             }
         }
         System.out.println("Результат >> "+out);
     }
-
 }
