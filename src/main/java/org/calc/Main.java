@@ -18,7 +18,9 @@ public class Main {
             System.exit(1); //выход из программы
         }
 
-        System.out.print("Выберете оператор \"+, -, *, /\" \n"+"Введите один из операторов >> ");
+        System.out.print("Выберете оператор \"+, -, *, /\"\n" +
+                "Введите один из операторов >> ");
+
         sc.nextLine(); // очистка буфера
         String operate = sc.nextLine();
 
@@ -33,6 +35,7 @@ public class Main {
                 System.exit(2);
             }
         }
+
         System.out.println("Результат >> "+out);
     }
 }
