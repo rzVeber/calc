@@ -18,24 +18,22 @@ public class Main {
             System.exit(1); //выход из программы
         }
 
-        System.out.print("Выберете оператор \"+, -, *, /\"\n" +
-                "Введите один из операторов >> ");
-
+        System.out.print("Выберете оператор \n \"+, -, *, /\" " +
+                "\nВведите один из операторов >> ");
         sc.nextLine(); // очистка буфера
         String operate = sc.nextLine();
 
         float out=0; //блок выбора оператора
         switch (operate){
-            case "+" -> {out = Funcs.sum(var1,var2);}
-            case "-" -> {out = Funcs.sub(var1,var2);}
-            case "*" -> {out = Funcs.mul(var1,var2);}
-            case "/" -> {out = Funcs.div(var1,var2);}
-            default  -> {
+            case "+"-> {out = Funcs.sum(var1,var2);}
+            case "-"-> {out = Funcs.sub(var1,var2);}
+            case "*"-> {out = Funcs.mul(var1,var2);}
+            case "/"-> {out = Funcs.div(var1,var2);}
+            default -> {
                 System.out.println("Вы не ввели нужный оператор");
                 System.exit(2);
             }
         }
-
         System.out.println("Результат >> "+out);
     }
 }
